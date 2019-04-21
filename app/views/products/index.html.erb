@@ -1,9 +1,13 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<div class="container">
+  <div class="row">
+    <h1 class="col-xs-12 col-sm-12 text-center">Cladding</h1>
+    <p class="col-xs-12 col-sm-12 text-center">listing of different materials</p>
+  </div>
+</div>
 <div class="container">
   <div class="row">
     <% @products.each do |product| %>
-    <div class="col-xs-12 col-sm-4">
+    <div class="col-xs-12 col-sm-4 space-card">
       <%= render "products/card" , product: product%>
     </div>
     <% end %>
