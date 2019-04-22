@@ -1,2 +1,38 @@
-<h1>Products#show</h1>
-<p>Find me in app/views/products/show.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
+  <div class="banner-content">
+    <h1><%= @product.brand_name %></h1>
+    <p><%= @product.category %></p>
+    <a class="btn btn-primary btn-lg">Start now</a>
+  </div>
+</div>
+<h1 class="text-center">Product details</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+        <ul class="list-group">
+          <li class="list-group-item"><div class="font-weight-bold">Category: </div><%= @product.category %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Brand name: </div><%=@product.brand_name %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Material: </div><%=@product.material %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Color: </div><%=@product.color %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Application: </div><%=@product.application %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Thickness: </div><%=@product.thickness %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Accessory: </div><%=@product.accessory %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Place of origin: </div><%=@product.place_of_origin %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Model number: </div><%=@product.model_number %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Alloy: </div><%=@product.alloy %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Surface treatment: </div><%=@product.surface_treatment %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Glass: </div><%=@product.glass %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Special: </div><%=@product.special %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Usage: </div><%=@product.usage %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Supply ability: </div><%=@product.supply_ability %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Packaging detail: </div><%=@product.packaging_detail %></li>
+          <li class="list-group-item"><div class="font-weight-bold">Port: </div><%=@product.port %></li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
