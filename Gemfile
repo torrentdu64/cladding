@@ -23,6 +23,7 @@ group :development do
 end
 
 group :development, :test do
+  gem 'letter_opener'
   gem 'dotenv-rails'
   gem 'pry-byebug'
   gem 'pry-rails'

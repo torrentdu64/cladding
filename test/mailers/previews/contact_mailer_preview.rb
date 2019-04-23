@@ -3,7 +3,7 @@ class ContactMailerPreview < ActionMailer::Preview
 
   # Preview this email at http://localhost:3000/rails/mailers/contact_mailer/info
   def info
-    ContactMailer.info
+    user = Contact.first
+    UserMailer.info(user)
   end
-
 end
