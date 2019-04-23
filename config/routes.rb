@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'contacts/new'
+
+  get 'contacts/create'
+
   devise_for :users
   root to: 'products#index'
   resources :products, only: [:index, :show]
