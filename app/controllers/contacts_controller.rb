@@ -9,6 +9,7 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_prams)
+
     if @contact.save
       #send email to us
       flash[:notice] = "Email send"
@@ -22,7 +23,7 @@ class ContactsController < ApplicationController
   private
 
   def contact_prams
-    params.require(:contact).permit(:email, :compagny, :description)
+    params.require(:contact).permit(:email, :compagny, :description, :product_id)
   end
 
 end

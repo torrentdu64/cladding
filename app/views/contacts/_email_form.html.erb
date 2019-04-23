@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-offset-3 col-sm-8">
+        <h1>Contacts us</h1>
+      <%= simple_form_for @contact do |f| %>
+        <%= f.input :email %>
+        <%= f.hidden_field :product_id, value: "#{@product.id}" if @product.present? %>
+        <%= f.input :compagny %>
+        <%= f.input :description, as: :text, :input_html => {:rows => 10} %>
+        <%= f.submit "send email", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
